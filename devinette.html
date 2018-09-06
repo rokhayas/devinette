@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calcul</title>
+</head>
+<body>
+<script type="text/javascript">
+	var sol=Math.floor(Math.random()*100)+1;
+	for (var i = 0; i <= 6; i++)
+	 {
+		var nombre=parseInt(prompt("entrer un nombre"));
+		console.log(nombre);
+		if(nombre==sol)
+		{
+			console.log("vous avez la solution" + sol);
+			break;
+		}
+		if(nombre!=sol)
+		{
+			
+			if (nombre<sol)
+			 {
+				console.log("le nbre saisie est trop petit");
+			}
+
+			else if(nombre>sol)
+			{
+				console.log("le nbre saisie est trop la grand");
+			}
+
+		}
+		}
+		  if (i==6)
+		{
+			console.log("vous avez perdu");
+		}
+	
+
+
+
+</script>
+</body>
+</html>
